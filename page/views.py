@@ -11,7 +11,7 @@ def home(request):
     return HttpResponse(q)'''
 
 def weather(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=bede176f040aae67e951395e1192873e'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=bede176f040aae67e951395e1192873e'
     city = request.GET['city']
 
     r = requests.get(url.format(city)).json()
@@ -19,6 +19,9 @@ def weather(request):
     temperature = round(r['main']['temp']-273.15, 2)
     description = r['weather'][0]['description']
     icon = r['weather'][0]['icon']
+    print(temperature)
+    print(description)
+    print(icon)
 
     '''
     city_weather = {
