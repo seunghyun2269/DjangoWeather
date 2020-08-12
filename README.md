@@ -7,8 +7,8 @@
 ###### 
 ##### 2) 검색 결과
 ###### 
-![home](./image/home.jpg)
+![result](./image/result.jpg)
 ###### 
 ##### 3) 에러 발생시
 ###### 
-![home](./image/home.jpg)
+![error](./image/error.jpg)
