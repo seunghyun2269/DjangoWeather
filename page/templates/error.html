@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    
 </head>
+
 <body>
-    error
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    <strong>! OOPS !</strong>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-4 is-4">
+
+                    <article class="message is-primary">
+                        <div class="message-body">
+                          An error has occured:(
+                          <br>
+                          A city named <strong>{{ city }}</strong> does not exist in the world
+                        </div>
+                      </article>
+
+                    <form action="{%url 'home'%}" style="float: right;">
+                        <button type="submit" class="button is-primary" >
+                            Home
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>

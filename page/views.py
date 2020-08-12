@@ -12,7 +12,7 @@ def weather(request):
 
     if r['cod'] != 200:
         print(r['cod'])
-        return render(request, 'error.html')
+        return render(request, 'error.html', {'city' : city})
 
     city_weather = {
         'city' : city,
